@@ -1313,7 +1313,7 @@ static inline CGFloat mgEaseInOutBounce(CGFloat t, CGFloat b, CGFloat c) {
     
     if (gestureRecognizer == _panRecognizer) {
         
-        if (self.isEditing) {
+        if (self.isEditing && _allowsSwipeEditing == NO) {
             return NO; //do not swipe while editing table
         }
         

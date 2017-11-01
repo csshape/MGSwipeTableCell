@@ -236,6 +236,7 @@ typedef NS_ENUM(NSInteger, MGSwipeEasingFunction) {
 /** Readonly property to check if the user swipe gesture is currently active */
 @property (nonatomic, readonly) BOOL isSwipeGestureActive;
 
+@property (nonatomic) BOOL allowsSwipeEditing;
 // default is NO. Controls whether multiple cells can be swiped simultaneously
 @property (nonatomic) BOOL allowsMultipleSwipe;
 // default is NO. Controls whether buttons with different width are allowed. Buttons are resized to have the same size by default.
